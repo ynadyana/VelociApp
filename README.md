@@ -18,10 +18,10 @@ VelociApp is a **desktop application** for real-time road damage detection using
 ## UI Preview
 Below are snapshots of the desktop interface to provide a quick overview of the application flow.
 
-**Home Screen**
+**Home Screen**  
 ![VelociApp Home Screen](screenshots/demo/ui-home.png)
 
-**Mode Selection**
+**Mode Selection**  
 ![VelociApp Mode Selection](screenshots/demo/ui-mode-selection.png)
 
 ## Model Selection
@@ -41,6 +41,13 @@ Two model sizes were evaluated on the validation set.
 
 > Note: YOLOv11L provides higher detection performance, but YOLOv11m is faster. For this application, YOLOv11L was chosen to prioritize detection quality in real road conditions.
 
+## Evaluation Plots (YOLOv11L)
+**Precision–Recall Curve**  
+![Precision–Recall Curve (YOLOv11L)](screenshots/result/results-pr-curve-yolov11L.png)
+
+**Confusion Matrix (Normalized)**  
+![Confusion Matrix (YOLOv11L)](screenshots/result/results-confusion-matrix-yolov11L.png)
+
 ## Performance & Hardware
 - **Recommended:** NVIDIA GPU (CUDA) for smooth real-time inference
 - **CPU Mode:** Supported, but **not suitable for real-time usage** due to lower FPS and slower responsiveness
@@ -58,9 +65,10 @@ The application is packaged for Windows distribution using:
 
 ## Additional Screenshots
 More screenshots are available in the `screenshots/` folder, including:
-- Real-time detection output (`demo-realtime.png`)
-- Video detection output (`demo-video.png`)
-- Report generation previews (`report-excel.png`, `report-pdf.png`)
+- Real-time detection output (`screenshots/demo/demo-realtime.png`)
+- Video detection output (`screenshots/demo/demo-video.png`)
+- Video upload workflow (`screenshots/demo/ui-video-upload.png`)
+- Report generation previews (`screenshots/demo/report-excel.png`, `screenshots/demo/report-pdf.png`)
 
 ## Notes
-Model weights may be excluded from the repository due to file size. If required, place the weights under `src/models/` (e.g., `best_yolov11-L.pt`) before running the application.
+Model weights may be excluded from the repository due to file size.
