@@ -67,7 +67,7 @@ The application is packaged for Windows distribution using:
 More screenshots are available in the `screenshots/` folder, including:
 - Real-time detection output (`screenshots/demo/demo-realtime.png`)
 - Video detection output (`screenshots/demo/demo-video.png`)
-- Video upload workflow (`screenshots/demo/ui-video-upload.png`)
+- Video upload (`screenshots/demo/ui-video-upload.png`)
 - Report generation previews (`screenshots/demo/report-excel.png`, `screenshots/demo/report-pdf.png`)
 
 ## Notes
