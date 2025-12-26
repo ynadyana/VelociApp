@@ -15,6 +15,15 @@ VelociApp is a **desktop application** for real-time road damage detection using
   6. Faded pedestrian crossing  
   7. Manhole  
 
+## UI Preview
+Below are snapshots of the desktop interface to provide a quick overview of the application flow.
+
+**Home Screen**
+![VelociApp Home Screen](screenshots/ui-home.png)
+
+**Mode Selection**
+![VelociApp Mode Selection](screenshots/ui-mode-selection.png)
+
 ## Model Selection
 Multiple YOLO model sizes were evaluated (YOLOv11m and YOLOv11L). While smaller variants can be faster, they were less consistent for real road scenes in this project. **YOLOv11L** was selected for **better overall detection performance**, with an acceptable speed trade-off when running on GPU.
 
@@ -47,3 +56,11 @@ The application is packaged for Windows distribution using:
 - `src/models/` — model weights location  
 - `screenshots/` — sample detections and UI previews  
 
+## Additional Screenshots
+More screenshots are available in the `screenshots/` folder, including:
+- Real-time detection output (`demo-realtime.png`)
+- Video detection output (`demo-video.png`)
+- Report generation previews (`report-excel.png`, `report-pdf.png`)
+
+## Notes
+Model weights may be excluded from the repository due to file size. If required, place the weights under `src/models/` (e.g., `best_yolov11-L.pt`) before running the application.
