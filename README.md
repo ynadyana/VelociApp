@@ -6,23 +6,45 @@ VelociApp is a **desktop application** for real-time road damage detection using
 - Desktop-based interface for **real-time detection**
 - Supports **video input / live feed** with on-screen results
 - Displays **bounding boxes + confidence score** for each detection
-- Detects **7 road damage categories**:
-  1. Longitudinal cracks  
-  2. Transverse cracks  
-  3. Alligator cracks  
-  4. Potholes  
-  5. White line blur  
-  6. Faded pedestrian crossing  
-  7. Manhole  
+- Detects **7 road damage categories** (see below)
+
+## Road Damage Categories (7)
+
+### Option A (Recommended): Visual Grid (more professional)
+> Add 7 sample images (one per class) and update the image paths below.
+
+<table>
+  <tr>
+    <td align="center"><b>Longitudinal cracks</b><br><img src="screenshots/classes/longitudinal-cracks.png" width="220"></td>
+    <td align="center"><b>Transverse cracks</b><br><img src="screenshots/classes/transverse-cracks.png" width="220"></td>
+    <td align="center"><b>Alligator cracks</b><br><img src="screenshots/classes/alligator-cracks.png" width="220"></td>
+    <td align="center"><b>Potholes</b><br><img src="screenshots/classes/potholes.png" width="220"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>White line blur</b><br><img src="screenshots/classes/white-line-blur.png" width="220"></td>
+    <td align="center"><b>Faded pedestrian crossing</b><br><img src="screenshots/classes/faded-pedestrian-crossing.png" width="220"></td>
+    <td align="center"><b>Manhole</b><br><img src="screenshots/classes/manhole.png" width="220"></td>
+    <td></td>
+  </tr>
+</table>
+
+### Option B: Text List (use this if you don’t have 7 images yet)
+1. Longitudinal cracks  
+2. Transverse cracks  
+3. Alligator cracks  
+4. Potholes  
+5. White line blur  
+6. Faded pedestrian crossing  
+7. Manhole  
 
 ## UI Preview
 Below are snapshots of the desktop interface to provide a quick overview of the application flow.
 
 **Home Screen**  
-![VelociApp Home Screen](screenshots/demo/ui-home.png)
+<img src="screenshots/demo/ui-home.png" width="900" />
 
 **Mode Selection**  
-![VelociApp Mode Selection](screenshots/demo/ui-mode-selection.png)
+<img src="screenshots/demo/ui-mode-selection.png" width="900" />
 
 ## Model Selection
 Multiple YOLO model sizes were evaluated (YOLOv11m and YOLOv11L). While smaller variants can be faster, they were less consistent for real road scenes in this project. **YOLOv11L** was selected for **better overall detection performance**, with an acceptable speed trade-off when running on GPU.
@@ -42,11 +64,12 @@ Two model sizes were evaluated on the validation set.
 > Note: YOLOv11L provides higher detection performance, but YOLOv11m is faster. For this application, YOLOv11L was chosen to prioritize detection quality in real road conditions.
 
 ## Evaluation Plots (YOLOv11L)
+
 **Precision–Recall Curve**  
-![Precision–Recall Curve (YOLOv11L)](screenshots/result/results-pr-curve-yolov11L.png)
+<img src="screenshots/result/results-pr-curve-yolov11L.png" width="700" />
 
 **Confusion Matrix (Normalized)**  
-![Confusion Matrix (YOLOv11L)](screenshots/result/results-confusion-matrix-yolov11L.png)
+<img src="screenshots/result/results-confusion-matrix-yolov11L.png" width="700" />
 
 ## Performance & Hardware
 - **Recommended:** NVIDIA GPU (CUDA) for smooth real-time inference
@@ -61,7 +84,7 @@ The application is packaged for Windows distribution using:
 - `src/` — application source code  
 - `src/assets/` — UI assets/resources  
 - `src/models/` — model weights location  
-- `screenshots/` — sample detections and UI previews  
+- `screenshots/` — sample detections, UI previews, and evaluation plots  
 
 ## Additional Screenshots
 More screenshots are available in the `screenshots/` folder, including:
