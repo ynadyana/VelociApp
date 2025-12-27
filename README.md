@@ -9,33 +9,7 @@ VelociApp is a **desktop application** for real-time road damage detection using
 - Detects **7 road damage categories** (see below)
 
 ## Road Damage Categories (7)
-
-### Option A (Recommended): Visual Grid (more professional)
-> Add 7 sample images (one per class) and update the image paths below.
-
-<table>
-  <tr>
-    <td align="center"><b>Longitudinal cracks</b><br><img src="screenshots/classes/longitudinal-cracks.png" width="220"></td>
-    <td align="center"><b>Transverse cracks</b><br><img src="screenshots/classes/transverse-cracks.png" width="220"></td>
-    <td align="center"><b>Alligator cracks</b><br><img src="screenshots/classes/alligator-cracks.png" width="220"></td>
-    <td align="center"><b>Potholes</b><br><img src="screenshots/classes/potholes.png" width="220"></td>
-  </tr>
-  <tr>
-    <td align="center"><b>White line blur</b><br><img src="screenshots/classes/white-line-blur.png" width="220"></td>
-    <td align="center"><b>Faded pedestrian crossing</b><br><img src="screenshots/classes/faded-pedestrian-crossing.png" width="220"></td>
-    <td align="center"><b>Manhole</b><br><img src="screenshots/classes/manhole.png" width="220"></td>
-    <td></td>
-  </tr>
-</table>
-
-### Option B: Text List (use this if you don’t have 7 images yet)
-1. Longitudinal cracks  
-2. Transverse cracks  
-3. Alligator cracks  
-4. Potholes  
-5. White line blur  
-6. Faded pedestrian crossing  
-7. Manhole  
+<img src="screenshots/classes-overview.png" width="900" />
 
 ## UI Preview
 Below are snapshots of the desktop interface to provide a quick overview of the application flow.
